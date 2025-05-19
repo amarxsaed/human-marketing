@@ -58,7 +58,7 @@ function createCard(card) {
                
             </div>
             <div class="p-6 flex-grow flex flex-col">
-                <h3 class="text-xl font-bold text-gray-800 mb-2">${card.title}</h3>
+                <h3 class="text-xl  text-gray-800 mb-2">${card.title}</h3>
                 <p class="text-gray-600 flex-grow">${card.description}</p>
                 
             </div>
