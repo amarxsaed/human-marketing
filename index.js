@@ -97,4 +97,7 @@ document.addEventListener('DOMContentLoaded', renderCards);
     }
 
     marquee.appendChild(flexDiv);
-    wrapper.appendChild(marquee);
+
+
+
+   

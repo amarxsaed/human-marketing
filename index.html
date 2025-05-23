@@ -5,15 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>HUMAN Marketing Agency</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap" rel="stylesheet">
+  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" class="rounded-2xl" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function(){
+      emailjs.init({
+        publicKey: "b0CxEI9V92hSALwd4", 
+      });
+    })();
+  </script>
+
+
   <style>
     /* Custom scroll animation for logos */
     @keyframes scroll {
       0% { transform: translateX(0); }
-      100% { transform: translateX(-50%); }
+      30% { transform: translateX(-30%); }
+            60% { transform: translateX(-60%); }
+                  90% { transform: translateX(-60%); }
+            100% { transform: translateX(-1000%); }
     }
     .logo-scroll {
       display: inline-flex;
@@ -51,14 +69,14 @@
 
   <!-- Hero Section -->
  <section class="py-16 px-6 bg-[#7264E6]">
-    <div class="container mx-auto flex flex-col lg:flex-row gap-12 lg:gap-16 items-center">
+    <div class="container mx-auto flex flex-col px-6 lg:flex-row gap-12 lg:gap-16 ">
       <!-- Content Section -->
-      <div class="w-full lg:w-1/2">
+      <div class="w-full lg:w-1/2 lg:mt-10">
         <div class="max-w-xl mx-auto lg:mx-0">
-          <h1 class="text-4xl md:text-5xl lg:text-[3.5rem] leading-tight mb-8 text-white font-bold">
-            Finally, a Marketing Team That <span class="text-[#F9D54C]">Gets You</span>
+          <h1 class="text-5xl md:text-6xl lg:text-[3.5rem] leading-tight mb-8 text-white ">
+            Finally, a Marketing Team That <span class="text-[#FF5B31]">Gets You</span>
           </h1>
-          <p class="text-lg md:text-xl text-white/90 mb-10 leading-relaxed">
+          <p class="  text-white/90 mb-10 leading-relaxed">
             We're more than an agency — we're your long-term partners. Our full-service team specializes in building and executing custom marketing strategies that align with your growth goals.
           </p>
           <div class="space-y-4">
@@ -91,10 +109,10 @@
       </div>
 
       <!-- Form Section -->
-      <div class="w-full lg:w-1/2">
-        <div class="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 shadow-xl">
-          <h3 class="text-2xl font-bold text-white mb-6 text-center">Let's Grow Together</h3>
-          <form action="https://formbold.com/s/FORM_ID" method="POST">
+      <div class="w-full lg:w-[68%]">
+        <div class=" backdrop-blur-sm  p-8  ">
+         
+          <form>
             <!-- First Row: Name -->
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
               <div>
@@ -104,7 +122,7 @@
                   name="name1"
                   id="name1"
                   placeholder="First Name"
-                  class="w-full border bg-white/10 border-white/30 rounded-lg py-3 px-4 text-white placeholder-white/50 focus:border-white focus:ring-2 focus:ring-white/30 focus:bg-white/5 transition"
+                  class="w-full border bg-[#7264E6] border-white/30  py-3 px-4 text-white placeholder-white/50 focus:border-white focus:ring-2 focus:ring-white/30 focus:bg-white/5 transition"
                   required
                 />
               </div>
@@ -116,7 +134,7 @@
                   name="name2"
                   id="name2"
                   placeholder="Last Name"
-                  class="w-full border bg-white/10 border-white/30 rounded-lg py-3 px-4 text-white placeholder-white/50 focus:border-white focus:ring-2 focus:ring-white/30 focus:bg-white/5 transition"
+                  class="w-full border bg-[#7264E6] border-white/30  py-3 px-4 text-white placeholder-white/50 focus:border-white focus:ring-2 focus:ring-white/30 focus:bg-white/5 transition"
                   required
                 />
               </div>
@@ -131,7 +149,7 @@
                   name="email"
                   id="email"
                   placeholder="Email"
-                  class="w-full border bg-white/10 border-white/30 rounded-lg py-3 px-4 text-white placeholder-white/50 focus:border-white focus:ring-2 focus:ring-white/30 focus:bg-white/5 transition"
+                  class="w-full border bg-[#7264E6] border-white/30  py-3 px-4 text-white placeholder-white/50 focus:border-white focus:ring-2 focus:ring-white/30 focus:bg-white/5 transition"
                   required
                 />
               </div>
@@ -143,13 +161,12 @@
                   name="phone"
                   id="phone"
                   placeholder="Phone Number"
-                  class="w-full border bg-white/10 border-white/30 rounded-lg py-3 px-4 text-white placeholder-white/50 focus:border-white focus:ring-2 focus:ring-white/30 focus:bg-white/5 transition"
+                  class="w-full border bg-[#7264E6] border-white/30  py-3 px-4 text-white placeholder-white/50 focus:border-white focus:ring-2 focus:ring-white/30 focus:bg-white/5 transition"
                 />
               </div>
             </div>
 
             <!-- Third Row: Company, Service -->
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
               <div>
                 <label for="company" class="block text-sm font-medium text-white/80 mb-2">Company Name</label>
                 <input
@@ -157,16 +174,18 @@
                   name="company"
                   id="company"
                   placeholder="Company Name"
-                  class="w-full border bg-white/10 border-white/30 rounded-lg py-3 px-4 text-white placeholder-white/50 focus:border-white focus:ring-2 focus:ring-white/30 focus:bg-white/5 transition"
+                  class="w-full border bg-[#7264E6] border-white/30  py-3 px-4 text-white placeholder-white/50 focus:border-white focus:ring-2 focus:ring-white/30 focus:bg-white/5 transition"
                 />
               </div>
 
-              <div>
-                <label for="service" class="block text-sm font-medium text-white/80 mb-2">Select Service</label>
+             
+            
+             <div>
+                <label for="service" class="block w-full text-sm font-medium text-white/80 mb-2">Select Service</label>
                 <select
                   name="service"
                   id="service"
-                  class="w-full border bg-white/10 border-white/30 rounded-lg py-3 px-4 text-white focus:border-white focus:ring-2 focus:ring-white/30 focus:bg-white/5 transition appearance-none"
+                  class="w-full border bg-[#7264E6] border-white/30  py-3 px-4 text-white placeholder-white/50 focus:border-white focus:ring-2 focus:ring-white/30 focus:bg-white/5 transition"
                 >
                   <option value="" class="bg-[#7264E6] text-white">Choose Service</option>
                   <option value="seo" class="bg-[#7264E6] text-white">SEO</option>
@@ -175,19 +194,8 @@
                   <option value="design" class="bg-[#7264E6] text-white">Graphic Design</option>
                 </select>
               </div>
-            </div>
 
-            <!-- Subject -->
-            <div class="mb-4">
-              <label for="subject" class="block text-sm font-medium text-white/80 mb-2">Subject</label>
-              <input
-                type="text"
-                name="subject"
-                id="subject"
-                placeholder="Enter your subject"
-                class="w-full border bg-white/10 border-white/30 rounded-lg py-3 px-4 text-white placeholder-white/50 focus:border-white focus:ring-2 focus:ring-white/30 focus:bg-white/5 transition"
-              />
-            </div>
+            
 
             <!-- Message -->
             <div class="mb-6">
@@ -197,17 +205,17 @@
                 name="message"
                 id="message"
                 placeholder="How can we help you?"
-                class="w-full border bg-white/10 border-white/30 rounded-lg py-3 px-4 text-white placeholder-white/50 focus:border-white focus:ring-2 focus:ring-white/30 focus:bg-white/5 transition"
+                class="w-full border bg-[#7264E6] border-white/30  py-2 h-12 px-4 text-white placeholder-white/50 focus:border-white focus:ring-2 focus:ring-white/30 focus:bg-white/5 transition"
               ></textarea>
             </div>
 
             <!-- Submit -->
             <div>
               <button
+              onclick="sendMail()"
                 type="submit"
-                class="w-full bg-[#F9D54C] hover:bg-[#f8ce2a] text-[#7264E6] py-4 px-6 text-lg font-bold rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg"
-              >
-                Get Started Today
+                class="w-full bg-[#FF5B31] hover:bg-[#7264E6] text-white py-4 px-6 text-lg font-bold rounded-lg transition-colors duration-300 shadow-md hover:shadow-lg"
+              >Let's talk
               </button>
             </div>
           </form>
@@ -335,60 +343,57 @@
 
         <!-- Right Box -->
         <div class="w-full md:w-1/2 p-8">
-           <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/3281/3281289.png" alt="Marketing Strategy" class="h-10 w-10 mb-2">
-      Marketing Strategy
-    </div>
   <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 align-middle">
-    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/3281/3281289.png" alt="Marketing Strategy" class="h-10 w-10 mb-2">
-      Marketing Strategy
+    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex items-center gap-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/3281/3281289.png" alt="Marketing Strategy" class="h-6 w-6">
+      <span>Marketing Strategy</span>
     </div>
-    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Content Marketing" class="h-10 w-10 mb-2">
-      Content Marketing
+    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex items-center gap-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Content Marketing" class="h-6 w-6">
+      <span>Content Marketing</span>
     </div>
-    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721287.png" alt="SEO" class="h-10 w-10 mb-2">
-      SEO
+    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex items-center gap-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/2721/2721287.png" alt="SEO" class="h-6 w-6">
+      <span>SEO</span>
     </div>
-    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Social Media" class="h-10 w-10 mb-2">
-      Social Media
+    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex items-center gap-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Social Media" class="h-6 w-6">
+      <span>Social Media</span>
     </div>
-    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/3161/3161837.png" alt="Video Marketing" class="h-10 w-10 mb-2">
-      Video Marketing
+    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex items-center gap-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/3161/3161837.png" alt="Video Marketing" class="h-6 w-6">
+      <span>Video Marketing</span>
     </div>
-    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email Marketing" class="h-10 w-10 mb-2">
-      Email Marketing
+    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex items-center gap-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" alt="Email Marketing" class="h-6 w-6">
+      <span>Email Marketing</span>
     </div>
-    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/9110/9110898.png" alt="Paid Media" class="h-10 w-10 mb-2">
-      Paid Media
+    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex items-center gap-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/9110/9110898.png" alt="Paid Media" class="h-6 w-6">
+      <span>Paid Media</span>
     </div>
-    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/3242/3242257.png" alt="Web Dev & Design" class="h-10 w-10 mb-2">
-      Web Dev & Design
+    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex items-center gap-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/3242/3242257.png" alt="Web Dev & Design" class="h-6 w-6">
+      <span>Web Dev & Design</span>
     </div>
-    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center  text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" alt="Marketing Analyst" class="h-10 w-10 mb-2">
-      Marketing Analyst
+    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex items-center gap-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" alt="Marketing Analyst" class="h-6 w-6">
+      <span>Marketing Analyst</span>
     </div>
-    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/3059/3059518.png" alt="SMS Marketing" class="h-10 w-10 mb-2">
-      SMS Marketing
+    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex items-center gap-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/3059/3059518.png" alt="SMS Marketing" class="h-6 w-6">
+      <span>SMS Marketing</span>
     </div>
-    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/2965/2965300.png" alt="E-commerce Marketing" class="h-10 w-10 mb-2">
-      E-commerce Marketing
+    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex items-center gap-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/2965/2965300.png" alt="E-commerce Marketing" class="h-6 w-6">
+      <span>E-commerce Marketing</span>
     </div>
-    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex flex-col items-center text-center">
-      <img src="https://cdn-icons-png.flaticon.com/512/2997/2997125.png" alt="Branding & Creative" class="h-10 w-10 mb-2">
-      Branding & Creative
+    <div class="p-4 rounded-lg hover:bg-blue-50 transition-colors duration-300 flex items-center gap-3">
+      <img src="https://cdn-icons-png.flaticon.com/512/2997/2997125.png" alt="Branding & Creative" class="h-6 w-6">
+      <span>Branding & Creative</span>
     </div>
   </div>
+</div>
 </div>
       </div>
     </div>
@@ -589,7 +594,20 @@
     <div class="bg-[#F45840] logo-container relative">
       <div class="logo-scroll flex animate-scroll whitespace-nowrap">
         <!-- Repeat as needed for seamless loop -->
-        <div class="flex items-center space-x-2 text-white bg-[#F45840] px-4">
+       
+         <div class="flex items-center space-x-2 text-white bg-[#F45840] px-4">
+          <span>✨</span>
+          <span class="font-bold tracking-wide">HUMAN-FIRST</span>
+        </div>
+         <div class="flex items-center space-x-2 text-white bg-[#F45840] px-4">
+          <span>✨</span>
+          <span class="font-bold tracking-wide">HUMAN-FIRST</span>
+        </div>
+         <div class="flex items-center space-x-2 text-white bg-[#F45840] px-4">
+          <span>✨</span>
+          <span class="font-bold tracking-wide">HUMAN-FIRST</span>
+        </div>
+         <div class="flex items-center space-x-2 text-white bg-[#F45840] px-4">
           <span>✨</span>
           <span class="font-bold tracking-wide">HUMAN-FIRST</span>
         </div>
@@ -667,5 +685,45 @@
       </ul>
     </div>
   </footer>
+
 </body>
+
+
 </html>
+<script type="text/javascript">
+  function sendMail() {
+    const firstName = document.getElementById("name1").value;
+    const lastName = document.getElementById("name2").value;
+    const email = document.getElementById("email").value;
+    const phone = document.getElementById("phone").value;
+    const company = document.getElementById("company").value;
+    const service = document.getElementById("service").value;
+    const message = document.getElementById("message").value;
+
+    const templateParams = {
+      first_name: firstName,
+      last_name: lastName,
+      email: email,
+      phone: phone,
+      company: company,
+      service: service,
+      message: message,
+    };
+
+    emailjs.send("service_ks3t1rg", "template_7fp6d8d", templateParams)
+      .then(() => {
+        alert("Email sent successfully!");
+        // Optionally clear fields:
+        document.getElementById("name1").value = "";
+        document.getElementById("name2").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("phone").value = "";
+        document.getElementById("company").value = "";
+        document.getElementById("service").value = "";
+        document.getElementById("message").value = "";
+      })
+      .catch((error) => {
+        alert("Failed to send email: " + JSON.stringify(error));
+      });
+  }
+</script>
